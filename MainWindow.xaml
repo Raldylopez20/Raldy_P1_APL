@@ -1,0 +1,25 @@
+﻿<Window x:Class="Raldy_P1_APL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Raldy_P1_APL"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+
+<!--********************************[MENU]**************************************-->
+            <Menu Height="24"  FrontSIze="15"  >
+                <MenuItem Header=" Registro  ">
+                
+
+                    <MenuItem x:Name="  " Header="  " Click="   "/>
+                    <MenuItem x:Name="  " Header="  " Click="   "/>
+
+
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+    </Grid>
+</Window>
