@@ -12,17 +12,32 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Raldy_P1_APL.UI.Registros;
+using Raldy_P1_APL.UI.Consultas;
 
 namespace Raldy_P1_APL
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
+    /// <Summary>
+    ///Interaction logic for MainWindow.xaml
+    /// <Summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void rCuidadMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            rCiudades rCiudades = new rCiudades();
+            rCiudades.Show();
+        }
+
+        private void cCuidadMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cCiudades cCiudades = new cCiudades();
+            cCiudades.Show();
         }
     }
 }
