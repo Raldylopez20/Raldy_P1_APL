@@ -20,7 +20,8 @@ namespace Raldy_P1_APL
 
     /// <Summary>
     ///Interaction logic for MainWindow.xaml
-    /// <Summary>
+    /// </Summary>
+    
     public partial class MainWindow : Window
     {
         public MainWindow()
