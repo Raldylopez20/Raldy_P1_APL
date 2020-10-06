@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Examen1AP.BLL
+namespace Raldy_P1_APL.BLL
 {
     public class Utilidades
     {

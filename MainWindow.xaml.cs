@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Raldy_P1_APL.UI.Registros;
-using Raldy_P1_APL.UI.Consultas;
+using Raldy_P1_APL.UI.
 
 namespace Raldy_P1_APL
 {
@@ -21,7 +21,7 @@ namespace Raldy_P1_APL
     /// <Summary>
     ///Interaction logic for MainWindow.xaml
     /// </Summary>
-    
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -31,8 +31,8 @@ namespace Raldy_P1_APL
 
         private void rCuidadMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            rCiudades rCiudades = new rCiudades();
-            rCiudades.Show();
+            cCiudades rCiudades = new cCiudades();
+            cCiudades.Show();
         }
 
         private void cCuidadMenuItem_Click(object sender, RoutedEventArgs e)
