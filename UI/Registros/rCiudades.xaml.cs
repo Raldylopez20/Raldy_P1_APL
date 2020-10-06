@@ -11,6 +11,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Raldy_P1_APL.BLL;
 using Raldy_P1_APL.Entidades;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Raldy_P1_APL.UI.Registros
 {
@@ -32,10 +34,19 @@ namespace Raldy_P1_APL.UI.Registros
         private bool Validar()
         {
             bool esValido = true;
-            if (CiudadIdTextbox.Text.Length == 0)
+            if (NombreTextBox.Text.Length == 0)
             {
                 esValido = false;
                 MessageBox.Show("Transaccion Fallida", "Fallo", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            if(ciudades.CiudadId == 0)
+            {
+                MessageBox.Show("\nNo puede Guardar con el campo CiudadId vacio", "Fallo", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+
+            if(ciudades.Nombre == null)
+            {
+                MessageBox.Show("\nNo puede Guardar con el campo nombre vacio", "Fallo", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             return esValido;
         }

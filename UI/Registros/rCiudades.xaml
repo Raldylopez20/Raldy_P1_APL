@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Raldy_P1_APL"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Registro de Ciudades" Height="350" Width="400">
 
 <Grid>
         <StackPanel Orientation="Vertical" Margin="10,10,10,10" >
@@ -15,9 +15,9 @@
 
             <StackPanel Orientation="Horizontal" Height="30">
                 <TextBox x:Name="CiudadIdTextbox" Text="{Binding CiudadId}" Width="150"/>
-                <Button x:Name="BuscarButton" Margin="100,0,0,0" Width="100" Click="BuscarButton_Click">
+                <Button x:Name="BuscarButton" Margin="100,0,0,0" Width="100" Height = "30" Click="BuscarButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Height="30" />
+                    <Image Source= "/Imagenes/Buscar.png" Width="30" Height= "30"/>
                         <Label Content="Buscar"/>
                     </StackPanel>
                 </Button>
@@ -26,7 +26,7 @@
             <!--*****************************************[ Nombre ]*****************************************-->
 
             <Label Content="Nombre" Margin="0,10,0,0" />
-            <TextBox x:Name="NombreTextbox" Text="{Binding Nombre}" Height="25" />
+            <TextBox x:Name="NombreTextBox" Text="{Binding Nombre}" Height="25" />
 
             <!--*****************************************[ boton de nuevo ]*****************************************-->
 
@@ -34,7 +34,7 @@
             <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
                 <Button x:Name="NuevoButton" Width="100" Click="NuevoButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Height="25" />
+                        <Image Source= "/Imagenes/nuevo.png" Width="30" Height= "30"/>
                         <Label Content="Nuevo"/>
                     </StackPanel>
                 </Button>
@@ -42,14 +42,14 @@
                <!--*****************************************[ boton guardar ]*****************************************-->
                 <Button x:Name="GuardarButton" Margin="30,0,0,0" Width="100" Click="GuardarButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Height="30" />
+                        <Image Source= "/Imagenes/guardar.png" Width="30" Height= "30"/>
                         <Label Content="Guardar"/>
                     </StackPanel>
                 </Button>
                <!--*****************************************[ boton de eliminar ]*****************************************-->
                 <Button x:Name="EliminarButton" Margin="30,0,0,0" Width="100" Click="EliminarButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Height="30" />
+                        <Image Source= "/Imagenes/Eliminar.1.png" Width="30" Height= "30"/>
                         <Label Content="Eliminar"/>
                     </StackPanel>
                 </Button>

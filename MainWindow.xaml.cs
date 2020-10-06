@@ -13,7 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Raldy_P1_APL.UI.Registros;
-using Raldy_P1_APL.UI.
+using Raldy_P1_APL.UI.Consultas;
+
 
 namespace Raldy_P1_APL
 {
@@ -31,8 +32,8 @@ namespace Raldy_P1_APL
 
         private void rCuidadMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            cCiudades rCiudades = new cCiudades();
-            cCiudades.Show();
+            rCiudades rCiudades = new rCiudades();
+            rCiudades.Show();
         }
 
         private void cCuidadMenuItem_Click(object sender, RoutedEventArgs e)
